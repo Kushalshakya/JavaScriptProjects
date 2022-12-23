@@ -1,0 +1,41 @@
+*{
+    margin : 0;
+    padding : 0;
+}
+body{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    height : 100vh;
+    background-color : wheat;
+}
+.slider-container{
+    width : 600px;
+    height : 300px;
+    position : relative;
+    overflow : hidden;
+}
+.images{
+    display : flex;
+    position : absolute;
+    animation : slider 20s infinite;
+    transition : all .5s ease-in-out;
+}
+img{
+    width : 600px;
+    height : 300px;
+    object-fit : cover;
+}
+.fa{
+    position : absolute;   
+    color : #fff;
+}
+.btn-prev{
+    top : 50%;
+    font-size : 30px;
+    left : 2%;
+}
+.btn-next{
+    top : 50%;
+    right : 2%;
+}

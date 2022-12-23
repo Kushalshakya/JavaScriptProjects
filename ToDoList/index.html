@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="this">
+
+    <div id="todo-error">
+        <h2>Invalid entry. Please try again with a valid entry</h2>
+    </div>
+    <div id="todo-help">
+        <div class="help-content-header">
+            <div class="help-header">
+                <h2>Help</h2>
+                <i class="fa fa-close help-close"></i>
+            </div>
+        </div>
+    </div>
+
+    <!--
+        Easter Egges:
+        /help
+        do a barrel roll
+
+        Flip a coin
+        Tic Tac Toe
+	Fun Fact
+	once in a blue moon
+      -->
+
+    <div id="todo">
+        <div class="todo-cover">
+            <h1>To Do list</h1>
+            <div class="list">
+                <ul class="ullist">
+                    <!-- Fix extended text bug while typing same words without gaps-->
+                    <!-- <li>This is the example text that exceeds the minimum list width</li> -->
+                    <!-- <li>MacbookMacbookMacbookMacbookMacbookMacbookMacbookMacbookMacbookMacbookMacbookMacbook</li> -->
+                    <li>Macbook
+                        <!-- <div class="icons-cover">
+                            <i class="fa fa-arrow-up"></i>
+                            <i class="fa fa-arrow-down"></i>
+                            <i class="fa fa-trash"></i>
+                        </div> -->
+                    </li>
+                    <li>Hp
+                        <!-- <div class="icons-cover">
+                            <i class="fa fa-arrow-up"></i>
+                            <i class="fa fa-arrow-down"></i>
+                            <i class="fa fa-trash"></i>
+                        </div> -->
+                    </li>
+                    <li>Laptop</li>
+                    <li>Pc</li>
+                    <li>Asus Rog</li>
+                    <li>Hard Disk</li>
+                </ul>
+            </div>
+            <div class="enter">
+                <input type="text" class="userinput" autofocus>
+                <button class="addlist">Add Item</button>
+                <button class="hidelist">Hide List</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="src/script.js" type="text/javascript"></script>
+</body>
+</html>

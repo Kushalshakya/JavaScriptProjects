@@ -1,0 +1,35 @@
+*{
+    margin : 0;
+    padding : 0;
+}
+body{
+    height : 100vh;
+    width : 100%;
+    overflow : hidden;
+    background-color : #000;
+}
+span{
+    width : 100px;
+    height : 100px;
+    pointer-events: none;
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    transform : translate(-50%,-50%);
+    background-image : url('heart_icon.png');
+    /* background-position : center; */
+    background-size : cover;
+    animation : heart 6s linear;
+}
+@keyframes heart{
+    0%{
+        transform : translate(-50%,-50%);
+        opacity : 1;
+        filter : hue-rotate(0);
+    }
+    100%{
+        transform : translate(-50%,-5000%);
+        opacity : 0;
+        filter : hue-rotate(820deg);
+    }
+}

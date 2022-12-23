@@ -1,0 +1,37 @@
+*{
+    margin : 0;
+    padding : 0;
+}
+body{
+    display: flex;
+    justify-content : center;
+    align-items : center;
+    height : 100vh;
+}
+#container{
+    width : 500px;
+    height : 500px;
+    position : relative;
+    overflow : hidden;
+}
+video,img{
+    width : 500px;
+    height : 500px;
+}
+.content{
+    display : flex;
+    transition : all .5s ease-in-out;
+    /* position : absolute; */
+}
+.fa{
+    color : #fff;
+    position: absolute;
+}
+.btn-next{
+    top : 50%;
+    right : 2%;
+}
+.btn-prev{
+    top : 50%;
+    left : 2%;
+}

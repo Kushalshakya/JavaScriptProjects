@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    *{
+        margin : 0;
+        padding : 0;
+        font-family : 'Poppins', sans-serif;
+    }
+    body{
+        display : flex;
+        flex-wrap : wrap;
+        justify-content : center;
+        align-items: center;
+        height : 100vh;
+        text-align: center;
+    }
+    button{
+        padding : 10px 20px;
+        cursor : pointer;
+    }
+</style>
+<body>
+    <div id="container">
+        <h1>Random Password Generator</h1>
+        <h2></h2>
+        <button>Generate</button>
+    </div>
+    <script type="text/javascript">
+        "use strict"
+        const btn = document.querySelector('button')
+        const pass = document.querySelector('h2')
+
+        const arr = '081@253#6749%abcDEFgh'
+        let store = ''
+        let num = 10
+        
+        btn.addEventListener('click',()=>{
+            pass.innerText = f()
+        })
+        function f(){
+	let store = ''
+            for(let i=0;i<num;i++){
+                const randomPass = Math.floor(Math.random()*arr.length)
+                store += arr.substring(randomPass, randomPass + 1)
+            }
+            return store
+        }
+    </script>
+</body>
+</html>
