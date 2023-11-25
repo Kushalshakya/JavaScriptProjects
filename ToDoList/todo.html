@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To List</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    *{
+        font-family: 'Poppins', sans-serif;
+    }
+    input{
+        width: 300px;
+    }
+    ol{
+        width: 500px;
+        word-break: break-all;
+    }
+</style>
+<body class="bg-gray-700 w-screen h-full text-white flex justify-content items-center flex-col">
+    <form action="" class="p-4">
+        <input type="text" placeholder="Create Todo" required autofocus class="outline-none text-black px-2 py-1">
+        <button class="btn bg-green-600 px-2 py-1 hover:bg-green-700">Create</button>
+    </form>
+    <ol class="list-decimal px-2 py-4 text-justify">
+        <li>Something Work Related</li>
+    </ol>
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        const olEl = document.querySelector("ol")
+        const inputEl = document.querySelector("input")
+        document.querySelector('.btn').addEventListener('click', (e) => {
+            e.preventDefault()
+            let liEl = document.createElement('li')
+            liEl.innerText = inputEl.value
+            olEl.appendChild(liEl)
+            inputEl.value = ''
+        })
+
+        $(document).on('click', 'li', function() {
+            $(this).remove()
+        })
+    </script>
+</body>
+</html>
