@@ -37,3 +37,5 @@ This is a simple web application to generate QR codes based on user input text.
 ## Contributing
 
 Contributions are welcome! If you have any suggestions or find any issues, feel free to open an issue or create a pull request.
+
+Created by [Kushal Shakya](https://github.com/Kushalshakya)
