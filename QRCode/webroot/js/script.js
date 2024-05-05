@@ -34,9 +34,7 @@ $('form').on('submit', (e) => {
 
 // Handle Social Medias Links
 const socialLinks = [
-    'https://github.com/KushalShakya',
-    'https://discord.gg/pynyjeVRtG',
-    'https://open.spotify.com/user/31pc2ddzk55kvyn3aumnnjdevazi'
+    'https://github.com/Kushalshakya/JavaScriptProjects/tree/main/QRCode',
 ]
 
 $('.social-media img').each((index, media) => {
