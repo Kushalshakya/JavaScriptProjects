@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Hangman Game">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/bootstrap/dist/css/bootstrap.css">
+    <script src="./assets/jquery/dist/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="w-100 vh-100 overflow-hidden">
+    <div class="audio-container position-absolute">
+        <i class="fa fa-music text-white fs-2 py-2 px-4"></i>
+        <div class="muted"></div>
+    </div>
+    
+    <div id="play-menu" class="play-menu w-100 vh-100 d-flex justify-content-center align-items-center">
+        <div class="play-container d-flex flex-column align-items-center">
+            <img src="./assets/images/logo.svg" class="my-4 hangman-logo stagger-start" alt="game-logo">
+            <button class="btn btn-play bg-primary text-white fs-3 stagger-start">Tap to Play</button>
+        </div>
+    </div>
+
+    <div id="game-type" class="game-type w-100 vh-100 position-absolute d-flex align-items-center justify-content-center flex-column">
+        <h2 class="text-white text-center fs-1 py-4">Select a Category</h2>
+        <div class="game-categories">
+            <button>Movies</button>
+            <button>Tv Shows</button>
+            <button>Countries</button><br>
+            <button>Capital Cities</button>
+            <button>Animals</button>
+            <button>Sports</button>
+        </div>
+    </div>
+    
+    <div id="game" class="game container text-white">
+        <div class="game-container">
+            <div class="game-menu d-flex align-items-center my-2 justify-content-between">
+                <div class="menu-left d-flex">
+                    <img src="./assets/images/icon-menu.svg" alt="" class="menu-bar">
+                    <h2 class="fs-1 pt-2 ps-2">Countries</h2>
+                </div>
+                <div class="menu-right d-flex gap-2">
+                    <img src="./assets/images/icon-heart.svg" class="life life1" width="30"></img>
+                    <img src="./assets/images/icon-heart.svg" class="life life2" width="30"></img>
+                    <img src="./assets/images/icon-heart.svg" class="life life3" width="30"></img>
+                </div>
+            </div>
+
+            <div class="game-categories"></div>
+            <div class="game-display">
+                
+            </div>
+            <div class="game-input d-flex flex-wrap gap-4 justify-content-center">
+            </div>
+
+        </div>
+    </div>
+
+    <audio hidden loop id="myAudio">
+        <source src="./assets/audio/backgroundMusic.wav">
+    </audio>
+    <span class="developer position-fixed p-2 bottom-0 end-0 fs-5 text-white">Developed By Sh_Kush</span>
+    <script src="./assets/js/script.js"></script>
+    <script>
+        gsap.from(".hangman-logo", {duration: 1,y: 100})
+    </script>
+</body>
+</html>
