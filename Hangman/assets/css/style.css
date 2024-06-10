@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "MouseMemoirs";
+  src: url(../fonts/MouseMemoirs-Regular.ttf);
+}
+body {
+  font-family: "MouseMemoirs" !important;
+  background-image: url("../images/background-desktop.svg");
+  background-repeat: no-repeat;
+  animation: slowMoment 8s linear infinite;
+}
+
+@keyframes slowMoment {
+  0%, 100% {
+    background-size: 100%;
+  }
+  25% {
+    background-size: 101%;
+    background-position: -8px -7px;
+  }
+  50% {
+    background-size: 102%;
+    background-position: -5px -3px;
+  }
+  75% {
+    background-size: 101%;
+    background-position: -4px -4px;
+  }
+}
+.audio-container {
+  width: auto;
+  right: 10px;
+  top: 10px;
+  z-index: 100;
+}
+.audio-container .fa-music, .audio-container .muted, .audio-container .unmuted {
+  cursor: pointer;
+}
+.audio-container .muted {
+  width: 4px;
+  height: 38px;
+  border-radius: 12px;
+  background: #fff;
+  transform: rotate(-45deg) translate(56px, -2px);
+  display: block;
+}
+.audio-container .unmuted {
+  display: none;
+}
+
+.play-menu {
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+  z-index: 10;
+}
+.play-menu .play-container h1 {
+  letter-spacing: 1px;
+  font-size: 60px;
+}
+.play-menu .play-container .btn-play {
+  outline: none;
+  border: none;
+}
+.play-menu.game-started {
+  transform: scale(1.4);
+  opacity: 0;
+  z-index: -1;
+}
+
+.game-display {
+  height: 400px;
+}
+
+.game-type {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.game-type .game-categories button {
+  background: #fff;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  width: 200px;
+  font-size: 30px;
+  padding: 18px 0;
+  margin: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.game-type .game-categories button:hover {
+  opacity: 0.9;
+}
+.game-type.game-categories-display {
+  z-index: -1;
+}
+
+.game {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.game button {
+  width: 80px;
+  background-color: #fff;
+  color: #0197f6;
+  font-size: 2.7rem;
+  padding: 0 30px;
+}
+
+/*# sourceMappingURL=style.css.map */
