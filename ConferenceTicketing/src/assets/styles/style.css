@@ -1,0 +1,60 @@
+@import "/node_modules/bootstrap/dist/css/bootstrap.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Inconsolata";
+  src: url("/src/assets/fonts/Inconsolata/Inconsolata-Regular.ttf");
+}
+body {
+  font-family: "Inconsolata" !important;
+}
+
+#mainContent {
+  min-height: 100vh;
+  background-image: url("/images/background-desktop.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#mainContent .mainContainer .formContent label {
+  padding: 6px 0;
+}
+#mainContent .mainContainer .formContent .addUserImage {
+  display: inline-block;
+  cursor: pointer;
+  height: 140px;
+  border: 2px solid #fff;
+  border-style: dashed;
+}
+#mainContent .mainContainer .formContent input[type=file] {
+  display: none;
+}
+#mainContent .mainContainer .formContent input:not([type=file]) {
+  padding: 6px 8px;
+  outline: none;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: hsl(248, 70%, 10%);
+  border-radius: 6px;
+}
+#mainContent .mainContainer .formContent .uploadIcon {
+  background-color: hsl(248, 70%, 10%);
+}
+#mainContent .mainContainer .formContent button {
+  outline: none;
+  border-radius: 6px;
+  border: none;
+  background-color: orangered;
+}
+#mainContent .mainContainer .formContent .imageInfo {
+  font-size: 14px;
+}
+#mainContent .mainContainer .formContent p {
+  margin-bottom: 0 !important;
+}
+
+/*# sourceMappingURL=style.css.map */
